@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Music Library</h1>
+
+    <div class="filter-form">
+        <form id="filter-form">
+            <div class="form-group">
+                <label for="genre-select">Genre:</label>
+                <select id="genre-select">
+                    <option value="all">All Genres</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tempo-select">Tempo:</label>
+                <select id="tempo-select">
+                    <option value="all">All Tempos</option>
+                    <option value="slow">Slow (&lt; 110 BPM)</option>
+                    <option value="medium">Medium (110 - 130 BPM)</option>
+                    <option value="fast">Fast (&gt; 130 BPM)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" placeholder="Search for songs or artists">
+            </div>
+            <div class="form-group">
+                <label for="sort-select">Sort by Duration:</label>
+                <select id="sort-select">
+                    <option value="asc">Shortest to Longest</option>
+                    <option value="desc">Longest to Shortest</option>
+                </select>
+            </div>
+            <button type="submit">Filter</button>
+        </form>
+    </div>
+
+    <table id="song-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Tempo (BPM)</th>
+                <th>Duration (in seconds)</th>
+                <th>Favorite</th>
+            </tr>
+        </thead>
+        <tbody id="song-list">
+            
+        </tbody>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+</html>
