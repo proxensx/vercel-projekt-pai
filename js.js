@@ -89,7 +89,7 @@ function filterSongs() {
         if (selectedTempo === 'fast' && song.bpm <= 130) {
             return false;
         }
-        if (searchQuery && !song.title.includes(searchQuery) && !song.artists.some(artist => artist.includes(searchQuery))) {
+        if (searchQuery && !song.title.toLowerCase().includes(searchQuery) && !song.artists.some(artist => artist.toLowerCase().includes(searchQuery))) {
             return false;
         }
         return true;
