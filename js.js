@@ -16,7 +16,6 @@ fetch('https://gist.githubusercontent.com/techniadrian/6ccdb1c837d431bb84c2dfedb
     });
 
 function generateTable(data) {
-    const table = document.getElementById('song-table');
     const songList = document.getElementById('song-list');
     songList.innerHTML = '';
 
@@ -74,7 +73,7 @@ function filterSongs() {
 
     const selectedGenre = genreSelect.value;
     const selectedTempo = tempoSelect.value;
-    const searchQuery = searchInput.value.toLowerCase();
+    const searchQuery = searchInput.value;
     const sortOption = sortSelect.value;
 
     let filteredSongs = songsData.filter(song => {
@@ -90,7 +89,7 @@ function filterSongs() {
         if (selectedTempo === 'fast' && song.bpm <= 130) {
             return false;
         }
-        if (searchQuery && !song.title.toLowerCase().includes(searchQuery) && !song.artists.some(artist => artist.toLowerCase().includes(searchQuery))) {
+        if (searchQuery && !song.title.includes(searchQuery) && !song.artists.some(artist => artist.includes(searchQuery))) {
             return false;
         }
         return true;

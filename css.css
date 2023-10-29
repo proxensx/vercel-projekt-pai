@@ -1,9 +1,4 @@
-
-html, body {
-	height: 100%;
-  }
-  
-  body {
+body {
 	margin: 0;
 	background: linear-gradient(45deg, #49a09d, #5f2c82);
 	font-family: sans-serif;
@@ -13,68 +8,67 @@ html, body {
 	background-attachment: fixed; 
 	background-size: cover;
 	background-repeat: no-repeat;
-  }
+}
   
-  h1 {
+h1 {
 	text-align: center;
 	padding: 20px;
 	background-color: #333;
 	color: white;
 	margin: 0;
-  }
+}
   
-
-  .container {
+.container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  }
+}
   
-  table {
+table {
 	width: 100%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 	margin: 20px auto;
-  }
+}
   
-  th, td {
+th, td {
 	padding: 15px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color: #fff;
-  }
+}
   
-  th {
+th {
 	text-align: left;
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	th {
 	  font-size: 14px;
 	}
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	td {
 	  font-size: 14px;
 	  padding: 10px;
 	}
-  }
+}
   
-  thead {
+thead {
 	th {
-	  background-color: #55608f;
+	background-color: #55608f;
 	}
-  }
+}
   
-  tbody tr:hover {
+tbody tr:hover {
 	background-color: rgba(255, 255, 255, 0.3);
-  }
+}
   
-  tbody td {
+tbody td {
 	position: relative;
-  }
+}
   
   tbody td:hover:before {
 	content: "";
@@ -85,41 +79,41 @@ html, body {
 	bottom: -9999px;
 	background-color: rgba(255, 255, 255, 0.2);
 	z-index: -1;
-  }
+}
   
-  .favorite-button {
+.favorite-button {
 	cursor: pointer;
 	font-size: 20px;
-  }
+}
   
-  .favorite {
+.favorite {
 	color: yellow;
-  }
+}
   
-  .filter-form {
+.filter-form {
 	padding: 20px;
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center; 
-  }
+}
   
-  .filter-form label {
+.filter-form label {
 	font-weight: bold;
 	margin-right: 10px;
 	margin-bottom: 10px;
-  }
+}
   
-  .filter-form select, .filter-form input {
+.filter-form select, .filter-form input {
 	padding: 5px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin-right: 10px;
 	margin-bottom: 10px;
-  }
+}
   
-  .filter-form button {
+.filter-form button {
 	background-color: #007BFF;
 	color: #fff;
 	padding: 10px 20px;
@@ -127,14 +121,14 @@ html, body {
 	border-radius: 5px;
 	cursor: pointer;
 	margin-bottom: 10px;
-  }
+}
   
-  .filter-form button:hover {
+.filter-form button:hover {
 	background-color: #0056b3;
-  }
+}
   
-  .form-group {
+.form-group {
 	display: flex;
 	margin-right: 20px;
 	color: white;
-  }
+}
